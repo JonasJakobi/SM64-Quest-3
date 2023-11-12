@@ -14,32 +14,26 @@ public class PlatformSpawner : MonoBehaviour
     public float spawnSpeed = 5;
 
     private GameObject previewRectangle;
-    // Start is called before the first frame update
 
     Vector3 center;
     Vector3 size;
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+ 
     void Update()
     {
-
+        //When button pressed, set the start point and instantiate the preview rectangle
         if(OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger, OVRInput.Controller.RTouch)){
             startPoint = transform.position;
             previewRectangle = Instantiate(previewPrefab, startPoint, Quaternion.identity);
-
         }
 
         
-        //While button held
+        //While button held, update the preview
         if(OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger, OVRInput.Controller.RTouch)){
             endPoint = transform.position;
             UpdateCenterAndSize();
             UpdatePreviewRectangle();
         }
+        //When button released, spawn the rectangle
         if(OVRInput.GetUp(OVRInput.Button.PrimaryIndexTrigger, OVRInput.Controller.RTouch)){
             Spawn();
         }
@@ -62,10 +56,7 @@ public class PlatformSpawner : MonoBehaviour
     }
 
     private void Spawn(){
-            
-        //Delete preview rectangle
         Destroy(previewRectangle);
-        // Spawn the rectangle prefab at the calculated center with the calculated size
         //Scale prefab before instantiating so that mario64 code can use the scale factor
         prefab.transform.localScale = size;
         GameObject rectangle = Instantiate(prefab, center, Quaternion.identity);

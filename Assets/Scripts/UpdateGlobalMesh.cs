@@ -13,12 +13,11 @@ public class UpdateGlobalMesh : MonoBehaviour
     BoxCollider marioCollider;
 
     private void Start() {
-        //Find gameobject with name Mario
+        //Find gameobject with name Mario (this game object will spawn at runtime so Find() is used)
         GameObject mario = GameObject.Find("Mario");
         marioCollider = mario.GetComponent<BoxCollider>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(oVRSceneVolumeMeshFilter.IsCompleted != globalMeshDone){
@@ -29,12 +28,15 @@ public class UpdateGlobalMesh : MonoBehaviour
 
 
     }
-    //Update the position of the dynamic terrain component
+    /// <summary>
+    /// SM64 terrain needs to be re-enabled in order to update the mesh collider
+    /// </summary>
+    /// <returns></returns>
     IEnumerator UpdateTerrain(){
         SM64DynamicTerrain terrain = GetComponent<SM64DynamicTerrain>();
         terrain.enabled = false;
         yield return new WaitForSeconds(0.1f);
-
+        //prevent mario from colliding with the mesh collider while terrain gets re-enabled, as that crashes the game.
         while(marioColliding()){
             Debug.Log("Mario is colliding");
             yield return new WaitForSeconds(0.1f);

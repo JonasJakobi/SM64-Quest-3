@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// Spawn physics balls to test collision with physical space.
+/// </summary>
 public class BallSpawner : MonoBehaviour
 {
     public GameObject prefab;

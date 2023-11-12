@@ -19,7 +19,6 @@ namespace LibSM64
             Interop.GlobalInit( File.ReadAllBytes( Application.persistentDataPath + "/baserom.us.z64" ));
             #else
 
-            Debug.Log("Loading the shit");
             Interop.GlobalInit( File.ReadAllBytes( Application.dataPath + "/../baserom.us.z64" ));
             #endif
             RefreshStaticTerrain();
