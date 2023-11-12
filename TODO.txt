@@ -1,0 +1,13 @@
+
+terrain doesnt get updated once its instantiated
+-only meshcollider work
+
+
+TODOS:
+-allow grabbable terrain A by creating version B thats invisible and grabbable and updating A's position to be at B
+
+-game crashes if a mesh is placed inside of mario (write code to prevent placement of blocks inside of mario)
+
+-get textures from textures-resource.com and import them into the project. 
+--Be able to load different levels textures to use as environment pieces. 
+-

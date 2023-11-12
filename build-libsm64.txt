@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+set -e
+cd "$(dirname "${BASH_SOURCE[0]}")"
+
+cd libsm64
+make lib
+
+update_lib() {
+    if [[ -e "dist/$1" ]]; then
+        cp "dist/$1" "../Assets/libsm64-unity/Plugins/$1"
+        echo "Updating library binary in Unity project: $1"
+    fi
+}
+
+update_lib libsm64.so
+update_lib sm64.dll
