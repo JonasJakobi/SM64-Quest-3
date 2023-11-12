@@ -1,5 +1,5 @@
 # AR M64 - Super Mario 64 for Quest 3
->Super Mario 64 running natively on the Quest 3 with passthrough AR.
+>Super Mario 64 running natively on the Quest 3, interacting with the real-world environment.
 
 This repo contains the Unity project of an MR app that allows controlling Mario from Super Mario 64 in virtual and augmented reality. Through passthrough and plane detection, this application allows Mario to navigate and jump around your physical Space. 
 
