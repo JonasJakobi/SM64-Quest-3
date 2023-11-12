@@ -3,7 +3,11 @@
 
 This repo contains the Unity project of an MR app that allows controlling Mario from Super Mario 64 in virtual and augmented reality. Through passthrough and plane detection, this application allows Mario to navigate and jump around your physical Space. 
 
-https://github.com/JonasJakobi/AR-MR-Mario-64--Quest-3-/assets/93149084/57b2f40e-f330-4cab-ba22-6b3300930459
+
+
+https://github.com/JonasJakobi/SM64-Quest-3/assets/93149084/b4726dea-1f7b-451a-a164-3a6be6563c0c
+
+
 
 
 Mario can be controlled with the Quest Controllers and platforms can be created for him to walk and jump on. 
