@@ -7,7 +7,7 @@ namespace LibSM64
 {
     internal static class Interop
     {
-        public const float SCALE_FACTOR = 900.0f; //oriignal 100
+        public const float SCALE_FACTOR = 2500.0f; //oriignal 100
 
         public const int SM64_TEXTURE_WIDTH  = 64 * 11;
         public const int SM64_TEXTURE_HEIGHT = 64;

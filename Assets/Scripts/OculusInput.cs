@@ -1,18 +1,22 @@
 using UnityEngine;
 using LibSM64;
+
 public class OculusInput : SM64InputProvider
 {
-    public GameObject cameraObject = null;
+
 
     public override Vector3 GetCameraLookDirection()
     {
-        return cameraObject.transform.forward;
+        return Camera.main.transform.forward;
     }
 
     public override Vector2 GetJoystickAxes()
     {
-        return OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick, OVRInput.Controller.LTouch);
+        Vector2 input = OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick, OVRInput.Controller.LTouch);
+        return input;
+        
     }
+
 
     public override bool GetButtonHeld( Button button )
     {

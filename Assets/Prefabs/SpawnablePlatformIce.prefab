@@ -166,7 +166,7 @@ GameObject:
   - component: {fileID: 6904410773300180545}
   - component: {fileID: 913863063497405759}
   m_Layer: 0
-  m_Name: SpawnablePlatform
+  m_Name: SpawnablePlatformIce
   m_TagString: Deletable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -216,7 +216,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 64f0c04087780084d933dbeab8ccfb50, type: 2}
+  - {fileID: 2100000, guid: e2e042aa889de024cad8c0189d36b273, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   terrainType: 1
-  surfaceType: 0
+  surfaceType: 46
 --- !u!114 &6904410773300180545
 MonoBehaviour:
   m_ObjectHideFlags: 0
