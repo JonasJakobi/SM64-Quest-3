@@ -28,14 +28,21 @@ _(Controllers shown are not the Quest 3 Controllers but Quest 2 Controllers, the
 - When creating or moving platforms, make sure not to place them inside of Mario. This will cause the game to crash. 
 
 - Ideally, start the application in a room where the physical space setup has been done before. 
+## Install on Quest 3
+>If you just want to try the project out, follow these simple steps:
 
-## Installation
+- Enable Quest 3 Developer Mode (Refer to [this guide](https://developer.oculus.com/documentation/native/android/mobile-device-setup/))
+- Sideload the .apk in the /build folder onto your quest (Refer to [this guide](https://www.uploadvr.com/sideloading-quest-how-to/))
+- Place an original Super Mario 64 (US) ROM into the `/Android/com.DefaultCompany.ARM64/files/` directory and name it `baserom.us.z64`
 
-### Unity Installation
+
+## Install Unity Project
+>If you want to tinker around with the project follow these steps instead:
+#### Unity Installation
 Cloning this repository and opening it in Unity 2022.3.8f1 should preconfigure your Unity application and import all packages accordingly. Make sure to add the Android Build Support module to your Unity install.
 
-### Quest 3 Developer Mode
+#### Quest 3 Developer Mode
 In case this is your first time developing with the Quest 3, you have to set up the headset for development mode.  Refer to [this guide](https://developer.oculus.com/documentation/native/android/mobile-device-setup/) by Oculus.
-### Running Project
+#### Running Project
 With the Quest 3 connected to the computer over a USB cable, `Build and Run` the project as an Android application. This should pack the project into an .apk file and load it onto the headset. 
 For the application to work, a ROM of the original Super Mario 64 game is needed. Name the rom `baserom.us.z64` and place it in the `/Android/com.DefaultCompany.ARM64/files/` directory.
