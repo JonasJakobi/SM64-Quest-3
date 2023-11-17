@@ -33,7 +33,7 @@ _(Controllers shown are not the Quest 3 Controllers but Quest 2 Controllers, the
 
 - Enable Quest 3 Developer Mode (Refer to [this guide](https://developer.oculus.com/documentation/native/android/mobile-device-setup/))
 - Sideload the .apk in the /build folder onto your quest (Refer to [this guide](https://www.uploadvr.com/sideloading-quest-how-to/))
-- Place an original Super Mario 64 (US) ROM into the `/Android/com.DefaultCompany.ARM64/files/` directory and name it `baserom.us.z64`
+- Place an original Super Mario 64 (US) ROM into the `/Android/data/com.DefaultCompany.ARM64/files/` directory and name it `baserom.us.z64`
 
 
 ## Install Unity Project
@@ -45,4 +45,4 @@ Cloning this repository and opening it in Unity 2022.3.8f1 should preconfigure y
 In case this is your first time developing with the Quest 3, you have to set up the headset for development mode.  Refer to [this guide](https://developer.oculus.com/documentation/native/android/mobile-device-setup/) by Oculus.
 #### Running Project
 With the Quest 3 connected to the computer over a USB cable, `Build and Run` the project as an Android application. This should pack the project into an .apk file and load it onto the headset. 
-For the application to work, a ROM of the original Super Mario 64 game is needed. Name the rom `baserom.us.z64` and place it in the `/Android/com.DefaultCompany.ARM64/files/` directory.
+For the application to work, a ROM of the original Super Mario 64 game is needed. Name the rom `baserom.us.z64` and place it in the `/Android/data/com.DefaultCompany.ARM64/files/` directory.
