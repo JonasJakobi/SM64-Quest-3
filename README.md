@@ -20,11 +20,12 @@ This project requires loading an official SM64 ROM at runtime to get Mario's tex
 
 
 ## Controls
-<img src="https://github.com/JonasJakobi/SM64-Quest-3/assets/93149084/21d8e5b7-c1d9-47ac-9310-c2af386a357d" alt="Controls" width="512">
+
+<img src="https://github.com/JonasJakobi/SM64-Quest-3/assets/93149084/96916240-0875-4880-8f20-90606001a44c" alt="Controls" width="512">
 
 _(Controllers shown are not the Quest 3 Controllers but Quest 2 Controllers, the Buttons are the same though)_
 
-- When creating platforms, make sure not to place them inside of Mario. This will cause the game to crash. 
+- When creating or moving platforms, make sure not to place them inside of Mario. This will cause the game to crash. 
 
 - Ideally, start the application in a room where the physical space setup has been done before. 
 
