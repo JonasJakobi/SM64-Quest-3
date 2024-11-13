@@ -32,6 +32,7 @@ _(Controllers shown are not the Quest 3 Controllers but Quest 2 Controllers, the
 >If you just want to try the project out, follow these simple steps:
 
 - Enable Quest 3 Developer Mode (Refer to [this guide](https://developer.oculus.com/documentation/native/android/mobile-device-setup/))
+- Download the arm64.apk file, currently located in the /Build folder in this repository
 - Sideload the .apk in the /build folder onto your quest (Refer to [this guide](https://www.uploadvr.com/sideloading-quest-how-to/))
 - Place an original Super Mario 64 (US) ROM into the `/Android/data/com.DefaultCompany.ARM64/files/` directory and name it `baserom.us.z64`
 
