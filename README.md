@@ -23,7 +23,7 @@ This project requires loading an official SM64 ROM at runtime to get Mario's tex
 
 <img src="https://github.com/JonasJakobi/SM64-Quest-3/assets/93149084/96916240-0875-4880-8f20-90606001a44c" alt="Controls" width="512">
 
-_(Controllers shown are not the Quest 3 Controllers but Quest 2 Controllers, the Buttons are the same though)_
+_(Controllers shown are not the Quest 3 Controllers but the Quest 1/Rift S Controllers, the Buttons are the same though)_
 
 - When creating or moving platforms, make sure not to place them inside of Mario. This will cause the game to crash. 
 
